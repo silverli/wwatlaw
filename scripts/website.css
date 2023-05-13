@@ -1,0 +1,15 @@
+*.primary {background-color: rgb(122, 85, 46)}
+*.secondary {background-color: rgb(186, 120, 40)}
+*.tertiary {background-color: rgb(186, 120, 40)}
+*.background {background-color: rgb(255, 255, 255)}
+h1#website-title {font-family: garamond, georgia, "palatino linotype", "book antigua", "times new roman", "ms mincho", serif; font-size: 34px; font-weight: normal; color: rgb(211, 118, 0); font-style: italic; text-decoration: none}
+h2#website-slogan {font-family: georgia, "times new roman", serif; font-size: 20px; font-weight: normal; color: rgb(220, 187, 147); font-style: italic; text-decoration: none}
+*#content {font-family: "trebuchet ms", tahoma, sans-serif; font-size: 12px; font-weight: normal; color: rgb(85, 85, 85); font-style: normal; text-decoration: none}
+*#content a:link {font-weight: normal; color: rgb(88, 121, 147); font-style: normal; text-decoration: underline}
+*#content a:active {font-weight: normal; color: rgb(88, 121, 147); font-style: normal; text-decoration: underline}
+*#content a:visited {font-weight: normal; color: rgb(88, 121, 147); font-style: normal; text-decoration: underline}
+*#content a:hover {font-weight: normal; color: rgb(79, 109, 132); font-style: normal; text-decoration: underline}
+*#navcontainer div a h3 {font-family: "palatino linotype", "book antigua", garamond, georgia, "times new roman", "ms mincho", serif; font-size: 14px; font-weight: bold; color: rgb(240, 226, 210); font-style: italic; text-decoration: none}
+*#navcontainer div a:hover h3 {font-weight: bold; color: rgb(255, 255, 255); font-style: normal; text-decoration: none}
+*#navcontainer div a:hover {font-weight: bold; color: rgb(255, 255, 255); font-style: normal; text-decoration: none}
+*.accent {background: transparent url(../images/222642.jpg) no-repeat top left}

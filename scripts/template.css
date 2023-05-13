@@ -1,0 +1,553 @@
+/*
+-----------------------------------------------------------------------------------------
+CSS document: ImageCafe Template Styles
+Created: 02/27/2006
+Last Modified: 03/01/2006
+NOTE: Template styles included here cannot be changed by the customer
+-------------------------------------------------------------------------------------- */
+* {margin:0;padding:0;}  /* zero out everything */
+body {
+	width:100%;
+	background:#F0F0E6 url(../images/ic_050_body_bg.gif) repeat-y 0 0;
+}
+/*
+-----------------------------------------------------------------------------------------
+Global
+-------------------------------------------------------------------------------------- */
+div {position:relative;}
+h1, h2, h3, h4, h5, h6 {margin:10px;}
+h1#website-title {margin:0;}
+h2#website-slogan {margin:0;}
+#navcontainer div h3 {margin:0;}
+#navcontainer div h3 {margin:0;}
+ul, ol {
+	margin:10px;
+	padding:0 0 0 20px;
+}
+ol {padding:0 0 0 30px;}
+blockquote {margin:10px 10px 10px 40px;}
+.clearer {clear:both;}
+
+/*
+-----------------------------------------------------------------------------------------
+General Layout Structure
+-------------------------------------------------------------------------------------- */
+#nav-top, #nav-left, #nav-right {
+	float:left;
+	width:750px;
+}
+#inner {float:left;}
+#website-title {
+	float:right;
+	margin:0 0 0 5px;
+	padding:20px 10px;
+	/*--- width for IE5 --*/
+		width:415px;
+	background:#fff;
+	/*--- width for all other browsers --*/
+		voice-family: "\"}\"";
+		voice-family:inherit;
+		width:395px;
+}
+#website-slogan {
+	float:left;
+	margin:0 5px 0 5px;
+	padding:10px 0 10px 20px;
+	width:305px;
+	background:#fff;
+}
+	* html #website-slogan {padding:10px 0 10px 10px;}
+#accent-wrapper {
+	float:left;
+	padding:20px 0 0 130px;
+	width:200px; 
+	height:274px;
+	border-top:10px solid #fff;
+	background:#fff;
+}
+	* html #accent-wrapper {width:190px;}
+.accent-none {display:none;}
+.accent {
+	float:left;
+	width:200px; 
+	height:274px;
+	
+}
+	* html .accent {
+	/*--- width for IE5 --*/
+		width:310px;
+	/*--- width for all other browsers --*/
+		voice-family: "\"}\"";
+		voice-family:inherit;
+		width:190px;
+	}
+
+/*
+-----------------------------------------------------------------------------------------
+=#NAV-TOP
+-------------------------------------------------------------------------------------- */
+/*------------------ Layout ------------------*/	
+#nav-top #navcontainer {
+	float:left;
+	width:750px;
+	z-index:1000;
+}
+	#nav-top #navcontainer #nav-wrapper {
+		position: absolute;
+		width:750px;
+		z-index:1000;
+	}
+#nav-top #navcontainer #nav-imageh {
+	display:none;
+}
+	
+#nav-top #slogan-container #nav-image {
+		/*position:relative;
+		top:0;*/
+		float:right;
+		width:319px;
+		height:234px;
+		background:url(../images/ic_050_nav_image.jpg) no-repeat top right;
+		background-color: #FFFFFF;
+		padding-left: 11px;
+	}
+* html #nav-top #slogan-container #nav-image {
+		padding-left: 1px;
+}
+#nav-top #inner {
+	float: left;
+	margin:0px 0 0 0;
+	width:420px;
+	z-index: 1;
+}
+	#nav-top #headertop {
+		z-index: 1;
+		float:left;
+		margin-top:36px;
+		margin-bottom:36px;
+		width:420px;
+	}
+	#nav-top #content {
+		float:left;
+		width:420px;
+		margin-top:0px;
+	}
+#nav-top #slogan-container {
+	float:right;
+	width:330px;
+	
+}
+* html #nav-top #slogan-container {width:0;}
+#nav-top #footer {
+	clear:both;
+	padding:10px;
+	color:#fff;
+}
+
+/*------------------ Navigation Elements ------------------*/
+#nav-top #navcontainer #nav-wrapper div, #nav-top #navcontainer #nav-wrapper div h3 {
+	float:left;
+	display:block;
+	cursor:pointer;
+}
+	#nav-top #navcontainer #nav-wrapper div a:link, 
+	#nav-top #navcontainer #nav-wrapper div a:active, 
+	#nav-top #navcontainer #nav-wrapper div a:visited {
+		float:left;
+		border-right:1px solid #fff;
+		padding:10px;
+		text-decoration:none;
+		white-space: nowrap;
+	}
+	#nav-top #navcontainer #nav-wrapper div a:hover {padding-top:10px;}
+		#nav-top #navcontainer #nav-wrapper div div.submenu, 
+		#nav-top #navcontainer #nav-wrapper div div.submenu h3 {
+			float:left;
+			display:block;
+		}
+		#nav-top #navcontainer #nav-wrapper div div.submenu {
+			position:absolute;
+			top:0;
+			left:0;
+			visibility: hidden;
+			/*margin:-201px 0 0 0;*/
+			border-top:1px solid #fff;
+			width:150px;
+		}
+			#nav-top #navcontainer #nav-wrapper div div.submenu div {
+				display:block;
+				margin:0;
+			}
+			#nav-top #navcontainer #nav-wrapper div div.submenu a:link, 
+			#nav-top #navcontainer #nav-wrapper div div.submenu a:active, 
+			#nav-top #navcontainer #nav-wrapper div div.submenu a:visited {
+				float:left;
+				width:130px;
+				border-bottom:1px solid #fff;
+				word-wrap: break-word;
+				white-space: normal;
+			}
+			#nav-top #navcontainer #nav-wrapper div div.submenu a:hover {
+				padding-top:10px;
+				border-top:0;
+			}
+
+/*------------------ Table Structures ------------------*/	
+#nav-top #content-table {
+	width:420px;
+	float:left;
+}
+	#nav-top #content-table-main {width:100%;}
+		#nav-top #content-table-main p {margin:10px 10px 15px 10px;}
+					
+/*
+-----------------------------------------------------------------------------------------
+=#NAV-LEFT
+-------------------------------------------------------------------------------------- */
+/*------------------ Layout ------------------*/	
+#nav-left #navcontainer {
+	float:left;
+	width:150px;
+	z-index:1000;
+}
+	#nav-left #navcontainer #nav-wrapper {
+		float:left;
+		width:150px;
+		z-index:1000;
+	}
+#nav-left #slogan-container #nav-image {
+	display:none;
+}	
+	#nav-left #navcontainer #nav-imageh {
+		position:relative;
+		top:0;
+		width:150px;
+		height:234px;
+		background:url(../images/ic_050_nav_image.jpg) no-repeat -50px 0;
+	}
+#nav-left #inner {
+	float:left;
+	padding:20px 0 0 0;
+	width:399px;
+	border-left:1px solid #fff;
+}
+	#nav-left #headertop {
+		float:left;
+		width:400px;
+	}
+		#nav-left #website-title {
+			/*--- width for IE5 ---*/
+				width:390px;
+			/*--- width for all other browsers --*/
+				voice-family: "\"}\"";
+				voice-family:inherit;
+				width:375px;
+		}
+	#nav-left #content {
+		float:left;
+		padding:20px 10px 0 0;
+		width:390px;
+	}
+#nav-left #slogan-container {
+	float:right;
+	width:200px;
+}
+	* html #nav-left #slogan-container {width:0;}
+	#nav-left #slogan-container #website-slogan {
+		float:left;
+		margin:0 5px 0 0;
+		padding:10px 10px 10px 20px;
+		/*--- width for IE5 ---*/
+			width:185px;
+		background:#fff;
+		/*--- width for all other browsers --*/
+			voice-family: "\"}\"";
+			voice-family:inherit;
+			width:165px;
+	}
+		* html #nav-left #slogan-container #website-slogan {padding:10px 0 10px 20px;}
+	#nav-left #slogan-container .accent-none {display:none;}
+	#nav-left #accent-wrapper {
+		float:left;
+		padding:20px 0 0 0;
+		width:200px; 
+		height:274px;
+		border-top:10px solid #fff;
+		background:#fff;
+	}
+		* html #nav-left #accent-wrapper {width:190px;}
+	#nav-left #slogan-container .accent {
+		float:left;
+		width:200px; 
+		height:274px;
+	}
+		* html #nav-left #slogan-container .accent {width:190px;}
+#nav-left #footer {
+	clear:both;
+	padding:10px;
+	color:#fff;
+}
+
+/*------------------ Navigation Elements ------------------*/
+#nav-left #navcontainer #nav-wrapper div, #nav-left #navcontainer #nav-wrapper div h3 {
+	float:left;
+	display:block;
+	cursor:pointer;
+}
+	#nav-left #navcontainer #nav-wrapper div {width:150px;}
+	#nav-left #navcontainer #nav-wrapper div a:link, 
+	#nav-left #navcontainer #nav-wrapper div a:active, 
+	#nav-left #navcontainer #nav-wrapper div a:visited {
+		float:left;
+		border-bottom:1px solid #fff;
+		/*--- width for IE5 --*/
+			width:150px;
+		padding:10px;
+		text-decoration:none;
+		/*--- width for all other browsers --*/
+			voice-family: "\"}\"";
+			voice-family:inherit;
+			width:130px;
+    		word-wrap: break-word;
+	}
+	#nav-left #navcontainer #nav-wrapper div a:hover {padding-top:10px;}
+		#nav-left #navcontainer #nav-wrapper div div.submenu, 
+		#nav-left #navcontainer #nav-wrapper div div.submenu h3 {
+			float:left;
+			display:block;
+		}
+		#nav-left #navcontainer #nav-wrapper div div.submenu {
+			position:absolute;
+			top:0;
+			left:0;
+			visibility: hidden;
+			border-left:1px solid #fff;
+			width:150px;
+		}
+			#nav-left #navcontainer #nav-wrapper div div.submenu div {
+				display:block;
+				margin:0;
+			}
+			#nav-left #navcontainer #nav-wrapper div div.submenu a:link, 
+			#nav-left #navcontainer #nav-wrapper div div.submenu a:active, 
+			#nav-left #navcontainer #nav-wrapper div div.submenu a:visited {
+				float:left;
+				width:130px;
+				border-bottom:1px solid #fff;
+				word-wrap: break-word;
+			}
+			#nav-left #navcontainer #nav-wrapper div div.submenu a:hover {
+				padding-top:10px;
+				border-top:0;
+			}
+
+/*------------------ Table Structures ------------------*/	
+#nav-left #content-table {
+	width:390px;
+	float:left;
+}
+	#nav-left #content-table-main {width:100%;}
+		#nav-left #content-table-main p {margin:10px 10px 15px 10px;}
+
+	
+/*
+-----------------------------------------------------------------------------------------
+=#NAV-RIGHT
+-------------------------------------------------------------------------------------- */
+/*------------------ Layout ------------------*/	
+#nav-right #navcontainer {
+	float:right;
+	width:150px;
+	z-index:1000;
+}
+	#nav-right #navcontainer #nav-wrapper {
+		float:left;
+		width:150px;
+		z-index:1000;
+	}
+#nav-right #slogan-container #nav-image {
+	display:none;
+}	
+	#nav-right #navcontainer #nav-imageh {
+		position:relative;
+		top:0;
+		width:150px;
+		height:234px;
+		background:url(../images/ic_050_nav_image.jpg) no-repeat -50px 0;
+	}
+#nav-right #inner {
+	float:left;
+	padding:20px 0 0 0;
+	width:400px;
+}
+	#nav-right #headertop {
+		float:left;
+		width:400px;
+	}
+		#nav-right #website-title {
+			/*--- width for IE5 ---*/
+				width:390px;
+			/*--- width for all other browsers --*/
+				voice-family: "\"}\"";
+				voice-family:inherit;
+				width:375px;
+		}
+	#nav-right #content {
+		float:left;
+		padding:20px 10px 0 0;
+		width:390px;
+	}
+#nav-right #slogan-container {
+	float:right;
+	width:200px;
+	margin:20px 0 0 0;
+}
+* html #nav-right #slogan-container {width:0;}
+	#nav-right #slogan-container #website-slogan {
+		float:left;
+		margin:0 0 0 5px;
+		padding:10px 20px 10px 10px;
+		/*--- width for IE5 ---*/
+			width:180px;
+		background:#fff;
+		/*--- width for all other browsers --*/
+			voice-family: "\"}\"";
+			voice-family:inherit;
+			width:165px;
+	}
+		* html #nav-right #slogan-container #website-slogan {padding:10px 0 10px 15px;}
+	#nav-right #accent-wrapper {
+		float:left;
+		padding:20px 0 0 0;
+		width:200px; 
+		height:274px;
+		border-top:10px solid #fff;
+		background:#fff;
+	}
+		* html #nav-right #accent-wrapper {width:190px;}
+	#nav-right #accent-wrapper .accent-none {display:none;}
+	#nav-right #accent-wrapper .accent {
+		float:left;
+		width:200px; 
+		height:274px;
+	}
+		* html #nav-right #accent-wrapper .accent {width:190px;}
+#nav-right #footer {
+	clear:both;
+	padding:10px;
+	color:#fff;
+}
+
+/*------------------ Navigation Elements ------------------*/
+#nav-right #navcontainer #nav-wrapper div, #nav-right #navcontainer #nav-wrapper div h3 {
+	float:left;
+	display:block;
+	cursor:pointer;
+}
+	#nav-right #navcontainer #nav-wrapper div {width:150px;}
+	#nav-right #navcontainer #nav-wrapper div a:link, 
+	#nav-right #navcontainer #nav-wrapper div a:active, 
+	#nav-right #navcontainer #nav-wrapper div a:visited {
+		float:left;
+		border-bottom:1px solid #fff;
+		/*--- width for IE5 --*/
+			width:150px;
+		padding:10px;
+		text-decoration:none;
+		/*--- width for all other browsers --*/
+			voice-family: "\"}\"";
+			voice-family:inherit;
+			width:130px;
+			word-wrap: break-word;
+	}
+	#nav-right #navcontainer #nav-wrapper div a:hover {padding-top:10px;}
+		#nav-right #navcontainer #nav-wrapper div div.submenu, 
+		#nav-right #navcontainer #nav-wrapper div div.submenu h3 {
+			float:left;
+			display:block;
+		}
+		#nav-right #navcontainer #nav-wrapper div div.submenu {
+			position:absolute;
+			top:0;
+			left:0;
+			visibility: hidden;
+			border-right:1px solid #fff;
+			width:150px;
+		}
+			#nav-right #navcontainer #nav-wrapper div div.submenu div {
+				display:block;
+				margin:0;
+			}
+			#nav-right #navcontainer #nav-wrapper div div.submenu a:link, 
+			#nav-right #navcontainer #nav-wrapper div div.submenu a:active, 
+			#nav-right #navcontainer #nav-wrapper div div.submenu a:visited {
+				float:left;
+				border-bottom:1px solid #fff;
+				word-wrap: break-word;
+			}
+			#nav-right #navcontainer #nav-wrapper div div.submenu a:hover {
+				padding-top:10px;
+				border-top:0;
+			}
+
+/*------------------ Table Structures ------------------*/	
+#nav-right #content-table {
+	width:390px;
+	float:left;
+}
+	#nav-right #content-table-main {width:100%;}
+		#nav-right #content-table-main p {margin:10px 10px 15px 10px;}
+
+		
+/*
+-----------------------------------------------------------------------------------------
+WIDE LAYOUT STYLES
+-------------------------------------------------------------------------------------- */
+body#wide {background:#F0F0E6 url(../images/ic_050_body_bg_wide.gif) repeat-y 0 0;}
+body#wide #nav-top,
+body#wide #nav-left,
+body#wide #nav-right {width:900px;}
+body#wide #website-title {
+	/*--- width for IE5 --*/
+	width:565px;
+	/*--- width for all other browsers --*/
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:545px;
+}
+
+/*------------------------------------ NAV-TOP ------------------------------------*/
+body#wide #nav-top #navcontainer {width:900px;}
+	body#wide #nav-top #navcontainer #nav-wrapper {width:900px;}
+body#wide #nav-top #inner {width:570px;}
+	body#wide #nav-top #headertop {width:570px;}
+	body#wide #nav-top #content {width:570px;}
+body#wide #nav-top #content-table {width:570px;}
+	
+/*------------------------------------ NAV-LEFT ------------------------------------*/
+body#wide #nav-left #inner {width:549px;}
+	body#wide #nav-left #headertop {width:549px;}
+		body#wide #nav-left #website-title {
+			/*--- width for IE5 ---*/
+				width:539px;
+			/*--- width for all other browsers --*/
+				voice-family: "\"}\"";
+				voice-family:inherit;
+				width:524px;
+		}
+	body#wide #nav-left #content {width:539px;}
+body#wide #nav-left #content-table {width:539px;}
+
+/*------------------------------------ NAV-RIGHT ------------------------------------*/
+body#wide #nav-right #inner {width:550px;}
+	body#wide #nav-right #headertop {width:550px;}
+		body#wide #nav-right #website-title {
+			/*--- width for IE5 ---*/
+				width:545px;
+			/*--- width for all other browsers --*/
+				voice-family: "\"}\"";
+				voice-family:inherit;
+				width:525px;
+		}
+	body#wide #nav-right #content {width:540px;}
+body#wide #nav-right #content-table {width:540px;}
